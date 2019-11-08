@@ -27,7 +27,7 @@ if(isset($_POST["login"])){
 if(isset($_POST["registro"])){
 	//$consulta="SELECT * FROM `users` WHERE user = '".$_POST["user"]."' AND password = '".$_POST["pass"]."'";
 	
-	$consulta="INSERT INTO `users` (`id`, `user`, `password`) VALUES (NULL, '".$_POST["user"]."', '".$_POST["pass"]."');";
+	$consulta="INSERT INTO `users` (`id`, `user`, `password`) VALUES (NULL, '".$_POST["user"]."', '".$_POST["pass"]."';";
 	
 	$result=mysqli_query($bbdd,$consulta);
 	
